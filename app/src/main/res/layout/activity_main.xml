@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        />
+    <EditText
+        android:id="@+id/main_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/enter_a_text"
+        android:layout_below="@+id/main_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/borders"
+        />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:layout_below="@+id/main_editText"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/alert_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert"
+        android:layout_below="@+id/main_editText"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayText"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/main_color"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/alert_btn"
+        />
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/main_color"
+        android:id="@+id/login_fragment"
+        android:layout_below="@id/alert_btn"
+        android:layout_marginTop="60dp"
+        />
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="wrap-content"
+        android:layout_height="150dp"
+        android:background="@color/second_color"
+        android:id="@+id/second_fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/login_fragment"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+
+
+</RelativeLayout>

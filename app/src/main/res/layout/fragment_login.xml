@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_page"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_alignStart="@id/password_input"
+        android:background="@drawable/borders"/>
+    />
+
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/title"
+        android:text="@string/email"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/email_label"
+        android:layout_alignBaseline="@id/email_label"
+        android:hint="@string/enter_your_email"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/borders"
+        android:layout_alignStart="@id/password_input"
+
+        />
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/password"
+        android:layout_below="@+id/email_label"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/enter_password"
+        android:layout_toEndOf="@id/password_label"
+        android:layout_alignBaseline="@id/password_label"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/borders"
+
+        />
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_input"
+        android:layout_alignStart="@+id/password_input"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/borders"
+        android:padding="10dp"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/textFromMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        />
+    />
+
+</RelativeLayout>
